@@ -1,0 +1,207 @@
+﻿capital = 378
+
+oob = "CAL_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+add_ideas = {
+	founder_of_disney_cal
+	allied_guarantee_cal
+	political_unity_cal
+}
+
+ENG = { add_to_faction = CAL }
+
+# DIPLOMACY
+set_autonomy = {
+	target = PHI
+	autonomous_state =  autonomy_colony
+}
+
+recruit_character = CAL_walt_disney
+recruit_character = CAL_lucille_ball
+recruit_character = CAL_upton_sinclair
+recruit_character = CAL_norton_ii
+recruit_character = CAL_culbert_levy_olson
+recruit_character = CAL_amelia_earhart
+recruit_character = CAL_hiram_johnson
+recruit_character = CAL_clarence_martin
+recruit_character = CAL_howard_hughes
+recruit_character = CAL_edward_longstreet_bodin
+recruit_character = CAL_john_f_aiso
+recruit_character = CAL_tamon_yamaguchi
+recruit_character = CAL_william_r_hearst
+recruit_character = CAL_angela_yvonne_davis
+recruit_character = CAL_gobernador_plutarco_elias_calles
+recruit_character = CAL_h_bruce_franklin
+recruit_character = CAL_governor_sir_clement_moody
+recruit_character = CAL_alfred_hitchcock
+recruit_character = CAL_amy_cooper
+recruit_character = CAL_arnold_schwarzenegger
+recruit_character = CAL_ben_shapiro
+recruit_character = CAL_bernadette_wolowitz
+recruit_character = CAL_bill_gates
+recruit_character = CAL_bob_chapek
+recruit_character = CAL_bob_iger
+recruit_character = CAL_bruce_lee
+recruit_character = CAL_charles_fujimoto
+recruit_character = CAL_charles_l_mcnary
+recruit_character = CAL_chiang_kai_shek
+recruit_character = CAL_congress
+recruit_character = CAL_coolio
+recruit_character = CAL_daniel_sjoberg
+recruit_character = CAL_david_kalakau_kawananakoa
+recruit_character = CAL_dwayne_johnson
+recruit_character = CAL_dwight_eisenhower
+recruit_character = CAL_earl_warren
+recruit_character = CAL_elon_musk
+recruit_character = CAL_elvis_presley
+recruit_character = CAL_eminem
+recruit_character = CAL_ernest_king
+recruit_character = CAL_george_lucas
+recruit_character = CAL_george_v
+recruit_character = CAL_georgy_lvov
+recruit_character = CAL_glen_taylor
+recruit_character = CAL_harry_cain
+recruit_character = CAL_henry_hart
+recruit_character = CAL_harry_truman
+recruit_character = CAL_herbert_hoover
+recruit_character = CAL_hirohito
+recruit_character = CAL_henry_wallace
+recruit_character = CAL_howard_wolowitz
+recruit_character = CAL_internetcity
+recruit_character = CAL_james_w_ford
+recruit_character = CAL_jennifer_aniston
+recruit_character = CAL_jerry_brown
+recruit_character = CAL_jim_henson
+recruit_character = CAL_joey_rooney
+recruit_character = CAL_john_h_cox
+recruit_character = CAL_john_henry_wilson
+recruit_character = CAL_joseph_bracken_lee
+recruit_character = CAL_joseph_poindexter
+recruit_character = CAL_kamala_harris
+recruit_character = CAL_katy_perry
+recruit_character = CAL_kanye_west
+recruit_character = CAL_kevin_hart
+recruit_character = CAL_lawrence_judd
+recruit_character = CAL_lebron_james
+recruit_character = CAL_leonard_hofstadter
+recruit_character = CAL_leonard_wood
+recruit_character = CAL_leonardo_dicaprio
+recruit_character = CAL_lydia_liliuokalani
+recruit_character = CAL_liv_rooney
+recruit_character = CAL_maddie_rooney
+recruit_character = CAL_mao_zedong
+recruit_character = CAL_marilyn_monroe
+recruit_character = CAL_mark_zuckerberg
+recruit_character = CAL_markiplier
+recruit_character = CAL_michael_eisner
+recruit_character = CAL_michael_jackson
+recruit_character = CAL_miranda_cosgrove
+recruit_character = CAL_mr_beast
+recruit_character = CAL_nancy_pelosi
+recruit_character = CAL_nikolai_ii
+recruit_character = CAL_norton_iii
+recruit_character = CAL_pancho_villa
+recruit_character = CAL_parker_rooney
+recruit_character = CAL_penny_hofstadter
+recruit_character = CAL_peter_wrangel
+recruit_character = CAL_philip_la_follete
+recruit_character = CAL_porfirio_diaz
+recruit_character = CAL_queen_liliuokalani
+recruit_character = CAL_raj_koothrappali
+recruit_character = CAL_ronald_reagan
+recruit_character = CAL_richard_nixon
+recruit_character = CAL_roy_disney
+recruit_character = CAL_ryan_gosling
+recruit_character = CAL_samuel_king
+recruit_character = CAL_sanford_b_dole
+recruit_character = CAL_santa_claus
+recruit_character = CAL_seth_macfarlane
+recruit_character = CAL_sheldon_cooper
+recruit_character = CAL_sheridan_downey
+recruit_character = CAL_snoop_dogg
+recruit_character = CAL_steve_jobs
+recruit_character = CAL_theodore_roosevelt
+recruit_character = CAL_tiger_woods
+recruit_character = CAL_timothee_chalamet
+recruit_character = CAL_tom_brady
+recruit_character = CAL_tom_hanks
+recruit_character = CAL_tom_holland
+recruit_character = CAL_tucker_carlson
+recruit_character = CAL_vachon_pugh
+recruit_character = CAL_vladimir_lenin
+recruit_character = CAL_warren_harding
+recruit_character = CAL_warren_magnuson
+recruit_character = CAL_weird_al_yankovic
+recruit_character = CAL_will_ferrell
+recruit_character = CAL_william_howard_taft
+recruit_character = CAL_woodrow_wilson
+recruit_character = CAL_yuji_naka
+recruit_character = CAL_zendaya
+recruit_character = CAL_zoltan_istvan
+recruit_character = CAL_henry_h_arnold
+recruit_character = CAL_alexander_patch
+recruit_character = CAL_lewis_h_brereton
+recruit_character = CAL_isaac_d_white
+recruit_character = CAL_albert_coady_wedemeyer
+recruit_character = CAL_alexander_vandergrift
+recruit_character = CAL_george_catlett_marshall
+recruit_character = CAL_george_windle_read_jr
+recruit_character = CAL_john_lesesne_dewitt
+recruit_character = CAL_john_pershing
+recruit_character = CAL_jimmy_doolittle
+recruit_character = CAL_herbert_b_powell
+recruit_character = CAL_hugh_scott
+recruit_character = CAL_chester_w_nimitz
+recruit_character = CAL_felix_stump
+recruit_character = CAL_harvey_overesch
+recruit_character = CAL_lloyd_m_mustin
+recruit_character = CAL_daniel_e_barbey
+recruit_character = CAL_james_h_doyle
+recruit_character = CAL_william_daniel_leahy
+recruit_character = CAL_tasker_bliss
+recruit_character = CAL_harry_w_hill
+
+1939.1.1 = {
+
+	add_political_power = 1198
+	
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = flexible_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	oob = "CAL_1939"
+	
+	set_technology = {
+		infantry_weapons = 1
+	}
+}
+
+set_convoys = 10
+
+set_popularities = {
+        democratic = 58
+        communism = 39
+        fascism = 2
+        neutrality = 1
+
+}
+
+set_politics = {
+	
+	ruling_party = democratic
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
