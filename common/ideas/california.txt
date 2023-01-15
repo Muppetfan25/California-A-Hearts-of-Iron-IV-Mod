@@ -1,0 +1,60 @@
+ideas = {
+
+	country = {
+		allied_guarantee_cal = {
+			picture = allied_guarantee
+			ai_will_do = {
+				factor = 1
+			}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			cancel = {
+				has_government = communism
+                has_government = fascism
+			}
+			on_add = {
+				add_political_power = 1000
+			}
+		}
+		founder_of_disney_cal = {
+			picture = founder_of_disney
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes 
+			}
+			cancel = {
+				has_government = communism
+                has_government = fascism
+				has_government = neutrality
+			}
+			modifier = {
+				political_power_cost = 0
+                consumer_goods_factor = 0.3
+                conscription_factor = -0.5
+                join_faction_tension = 0.20
+                local_resources_factor = -0.2
+			}
+		}
+		political_unity_cal = {
+			picture = political_unity
+			ai_will_do = {
+				factor = 1
+			}
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			on_add = {
+				add_stability = 0.5
+			}
+		}
+	}
+}

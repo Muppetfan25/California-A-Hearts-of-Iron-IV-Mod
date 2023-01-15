@@ -1,0 +1,2437 @@
+characters={
+	CAL_culbert_levy_olson={
+		name="Culbert Levy Olson"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Levy_Olson.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_LEVY_OLSON_DESC"
+			ideology=moderatism
+			traits={ staunch_monarchist }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_amelia_earhart={
+		name="Amelia Earhart"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Amelia_Earhart.dds"
+			}
+		}
+		advisor={
+			
+			slot = political_advisor
+			idea_token = CAL_amelia_earhart
+			allowed = {
+					original_tag = CAL
+				}
+				
+				traits = {
+					democratic_reformer
+					famous_aviator
+				}
+		}
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/CAL_amelia_earhart.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_AMELIA_EARHART_DESC"
+			ideology=liberalism
+			traits={ famous_aviator }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_hiram_johnson={
+		name="Hiram Johnson"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Hiram_Johnson.dds"
+			}
+		}
+		advisor={
+			
+			slot = theorist
+			idea_token = CAL_hiram_johnson
+			ledger = army
+				allowed = {
+					original_tag = CAL
+				}
+				
+				traits = {
+					military_theorist
+				}
+		}
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/CAL_hiram_johnson.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_HIRAM_JOHNSON_DESC"
+			ideology=conservatism
+			traits={ dislikes_germany }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_clarence_martin={
+		name="Clarence Martin"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Clarence_Martin.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CAL_clarence_martin
+			allowed  = {
+					original_tag  = CAL
+				}
+				traits  = {
+					fascist_demagogue
+				}
+		}
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/CAL_clarence_martin.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_CLARENCE_MARTIN_DESC"
+			ideology=falangism
+			traits={ blitzkrieg_theorist }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_howard_hughes={
+		name="Howard Hughes"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Howard_Hughes.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_HOWARD_HUGHES_DESC"
+			ideology=marxism
+			traits={ red_army_organizer }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_edward_longstreet_bodin={
+		name="Edward Longstreet Bodin"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Edward_Bodin.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_EDWARD_BODIN_DESC"
+			ideology=leninism
+			traits={ ambitious_union_boss }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_john_f_aiso={
+		name="John F. Aiso"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_John_Aiso.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_JOHN_AISO_DESC"
+			ideology=centrism
+			traits={ warrior_code }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_tamon_yamaguchi={
+		name="Tamon Yamaguchi"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Tamon_Yamaguchi.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_TAMON_YAMAGUCHI_DESC"
+			ideology=fascism_ideology
+			traits={ warrior_code }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_william_r_hearst={
+		name="William R. Hearst"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_William_Hearst.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_WILLIAM_HEARST_DESC"
+			ideology=oligarchism
+			traits={ national_integralist }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_angela_yvonne_davis={
+		name="Angela Yvonne Davis"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Angela_Davis.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_ANGELA_DAVIS"
+			ideology=socialism
+			traits={ social_reformer }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_gobernador_plutarco_elias_calles={
+		name="Gobernador Plutarco Elías Calles"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Plutarco_Calles.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_ELIAS_CALLES"
+			ideology=oligarchism
+			traits={ compassionate_gentleman }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_h_bruce_franklin={
+		name="H. Bruce Franklin"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Bruce_Franklin.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_BRUCE_FRANKLIN"
+			ideology=marxism
+			traits={ communist_revolutionary }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_governor_sir_clement_moody={
+		name="Governor Sir Clement Moody"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Clement_Moody.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_CLEMENT_MOODY"
+			ideology=despotism
+			traits={ staunch_monarchist }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_alfred_hitchcock={
+		name="Alfred Hitchcock"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Alfred_Hitchcock.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CAL_alfred_hitchcock
+			allowed  = {
+					original_tag  = CAL
+				}
+				traits  = {
+					head_of_intelligence
+				}
+		}
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/CAL_alfred_hitchcock.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_ALFRED_HITCHCOCK_DESC"
+			ideology=liberalism
+			traits={ famous_actor }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_amy_cooper={
+		name="Amy Cooper"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Amy_Cooper.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_AMY_COOPER_DESC"
+			ideology=liberalism
+			traits={ dislikes_germany }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_arnold_schwarzenegger={
+		name="Arnold Schwarzenegger"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Arnold_Schwarzenegger.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_ARNOLD_SCHWARZNEGGER"
+			ideology=despotism
+			traits={ staunch_monarchist }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_ben_shapiro={
+		name="Ben Shapiro"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Ben_Shapiro.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_BEN_SHAPIRO_DESC"
+			ideology=stalinism
+			traits={ famous_actor }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_bernadette_wolowitz={
+		name="Bernadette R. Wolowitz"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Bernadette_Wolowitz.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_BERNADETTE_WOLOWITZ_DESC"
+			ideology=liberalism
+			traits={ famous_actor }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_bill_gates={
+		name="Bill Gates"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Bill_Gates.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_BILL_GATES_DESC"
+			ideology=liberalism
+			traits={ famous_aviator }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_bob_chapek={
+		name="Bob Chapek"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Bob_Chapek.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_BOB_CHAPEK"
+			ideology=liberalism
+			traits={ dislikes_germany }
+			expire="2022.11.20.1"
+			id=-1
+		}
+	}
+	CAL_bob_iger={
+		name="Bob Iger"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Bob_Iger.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_BOB_IGER"
+			ideology=liberalism
+			traits={ dislikes_germany }
+			expire="2020.2.1.1"
+			id=-1
+		}
+	}
+	CAL_bruce_lee={
+		name="Bruce Lee"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Bruce_Lee.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_BRUCE_LEE_DESC"
+			ideology=liberalism
+			traits={ famous_actor }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_charles_fujimoto={
+		name="Charles Fujimoto"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Charles_Fujimoto.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_CHARLES_FUJIMOTO_DESC"
+			ideology=leninism
+			traits={ communist_revolutionary }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_charles_l_mcnary={
+		name="Charles L. McNary"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Charles_L_McNary.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_CHARLES_L_MCNARY_DESC"
+			ideology=conservatism
+			traits={ dislikes_germany }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_chiang_kai_shek={
+		name="Chiang Kai Shek"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Chiang_Kai_Shek.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_CHIANG_KAI_SHEK_DESC"
+			ideology=despotism
+			traits={ dislikes_germany }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_congress={
+		name="Congress"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Congress.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_CONGRESS_DESC"
+			ideology=liberalism
+			traits={ dislikes_germany }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_coolio={
+		name="Coolio"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Coolio.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_COOLIO_DESC"
+			ideology=liberalism
+			traits={ famous_singer }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_daniel_sjoberg={
+		name="Daniel Sjöberg"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Daniel_Sjöberg.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_DANIEL_SJOBERG_DESC"
+			ideology=conservatism
+			traits={ dislikes_germany }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_david_kalakau_kawananakoa={
+		name="David K. Kawananakoa"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_David_Kalakaua_Kawananakoa.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_DAVID_KAWANANAKOA_DESC"
+			ideology=centrism
+			traits={ dislikes_germany }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_dwayne_johnson={
+		name="Dwayne Johnson"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Dwayne_Johnson.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_DWAYNE_JOHNSON"
+			ideology=centrism
+			traits={ staunch_monarchist }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_dwight_eisenhower={
+		name="Dwight D. Eisenhower"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Dwight_Eisenhower.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_DWIGHT_EISENHOWER_DESC"
+			ideology=conservatism
+			traits={ dislikes_germany }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_earl_warren={
+		name="Earl Warren"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Earl_Warren.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_EARL_WARREN_DESC"
+			ideology=marxism
+			traits={ social_reformer }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_elon_musk={
+		name="Elon Musk"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Elon_Musk.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_ELON_MUSK_DESC"
+			ideology=nazism
+			traits={ fascist_demagogue }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_elvis_presley={
+		name="Elvis Presley"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Elvis_Presley.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_ELVIS_PRESLEY_DESC"
+			ideology=conservatism
+			traits={ dislikes_germany }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_eminem={
+		name="Eminem"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Eminem.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_EMINEM_DESC"
+			ideology=conservatism
+			traits={ dislikes_germany }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_ernest_king={
+		name="Ernest King"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Ernest_King.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_ERNEST_KING_DESC"
+			ideology=stalinism
+			traits={ social_reformer }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_george_lucas={
+		name="George Lucas"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_George_Lucas.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_GEORGE_LUCAS_DESC"
+			ideology=liberalism
+			traits={ famous_actor }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_george_v={
+		name="George V of Windsor"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_George_V.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_GEORGE_V_DESC"
+			ideology=liberalism
+			traits={ dislikes_germany constitutional_monarch }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_georgy_lvov={
+		name="Georgy Lvov"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Georgy_Lvov.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_GEORGY_LVOV_DESC"
+			ideology=despotism
+			traits={ dislikes_germany }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_glen_taylor={
+		name="Glen Taylor"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Glen_Taylor.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_GLEN_TAYLOR_DESC"
+			ideology=conservatism
+			traits={ dislikes_germany }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_harry_cain={
+		name="Harry Cain"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Harry_Cain.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_HARRY_CAIN_DESC"
+			ideology=leninism
+			traits={ communist_revolutionary }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_henry_hart={
+		name="Henry Hart"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Henry_Hart.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_HENRY_HART_DESC"
+			ideology=liberalism
+			traits={ dislikes_germany famous_actor }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_harry_truman={
+		name="Harry S. Truman"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Harry_Truman.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_HARRY_S_TRUMAN_DESC"
+			ideology=liberalism
+			traits={ dislikes_germany }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_herbert_hoover={
+		name="Herbert Hoover"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Herbert_Hoover.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_HERBERT_HOOVER_DESC"
+			ideology=liberalism
+			traits={ dislikes_germany }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_hirohito={
+		name="Emperor Hirohito"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Hirohito.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_HIROHITO_DESC"
+			ideology=fascism_ideology
+			traits={ fascist_demagogue }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_henry_wallace={
+		name="Henry Wallace"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Henry_Wallace.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_HENRY_WALLACE_DESC"
+			ideology=marxism
+			traits={ communist_revolutionary }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_howard_wolowitz={
+		name="Howard Wolowitz"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Howard_Wolowitz.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_HOWARD_WOLOWITZ_DESC"
+			ideology=socialism
+			traits={ famous_actor }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_internetcity={
+		name="InternetCity"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_InternetCity.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_INTERNETCITY_DESC"
+			ideology=conservatism
+			traits={ famous_actor }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_james_w_ford={
+		name="James W. Ford"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_James_W_Ford.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_JAMES_W_FORD_DESC"
+			ideology=socialism
+			traits={ dislikes_germany }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_jennifer_aniston={
+		name="Jennifer Aniston"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Jennifer_Aniston.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_JENNIFER_ANISTON_DESC"
+			ideology=centrism
+			traits={ famous_actor }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_jerry_brown={
+		name="Jerry Brown"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Jerry_Brown.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_JERRY_BROWN_DESC"
+			ideology=conservatism
+			traits={ dislikes_germany }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_jim_henson={
+		name="Jim Henson"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Jim_Henson.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_JIM_HENSON"
+			ideology=conservatism
+			traits={ famous_puppeteer }
+			expire="1990.5.16.1"
+			id=-1
+		}
+	}
+	CAL_joey_rooney={
+		name="Joey Rooney"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Joey_Rooney.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_JOEY_ROONEY_DESC"
+			ideology=liberalism
+			traits={ famous_actor }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_john_h_cox={
+		name="John H. Cox"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_John_H_Cox.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_JOHN_COX_DESC"
+			ideology=stalinism
+			traits={ communist_revolutionary }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_john_henry_wilson={
+		name="John Henry Wilson"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_John_Henry_Wilson.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_JOHN_HENRY_WILSON_DESC"
+			ideology=conservatism
+			traits={ dislikes_germany }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_joseph_bracken_lee={
+		name="Joseph Bracken Lee"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Joseph_Bracken_Lee.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_JOSEPH_BRACKEN_LEE_DESC"
+			ideology=moderatism
+			traits={ dislikes_germany }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_joseph_poindexter={
+		name="Joseph Poindexter"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Joseph_Poindexter.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_JOSEPH_POINDEXTER_DESC"
+			ideology=conservatism
+			traits={ dislikes_germany }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_kamala_harris={
+		name="Kamala Harris"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Kamala_Harris.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_KAMALA_HARRIS"
+			ideology=marxism
+			traits={ communist_revolutionary }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_kevin_hart={
+		name="Kevin Hart"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Kevin_Hart.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_KEVIN_HART"
+			ideology=moderatism
+			traits={ constitutional_monarch }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_katy_perry={
+		name="Katy Perry"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Katy_Perry.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_KATY_PERRY_DESC"
+			ideology=despotism
+			traits={ famous_singer }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_kanye_west={
+		name="Kanye West"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Kanye_West.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_KANYE_WEST_DESC"
+			ideology=leninism
+			traits={ communist_revolutionary }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_lawrence_judd={
+		name="Lawrence Judd"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Lawrence_Judd.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_LAWRENCE_JUDD_DESC"
+			ideology=nazism
+			traits={ fascist_demagogue }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_lebron_james={
+		name="Lebron James"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Lebron_James.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_LEBRON_JAMES_DESC"
+			ideology=conservatism
+			traits={ dislikes_germany }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_leonard_hofstadter={
+		name="Leonard Hofstadter"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Leonard_Hofstadter.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_LEONARD_HOFSTADTER_DESC"
+			ideology=conservatism
+			traits={ famous_actor }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_leonard_wood={
+		name="Leonard Wood"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Leonard_Wood.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_LEONARD_WOOD_DESC"
+			ideology=centrism
+			traits={ dislikes_germany }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_leonardo_dicaprio={
+		name="Leonardo DiCaprio"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Leonardo_DiCaprio.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_LEONARDO_DICAPRIO_DESC"
+			ideology=conservatism
+			traits={ dislikes_germany }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_lydia_liliuokalani={
+		name="Lydia Liliuokalani"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Lydia_Liliuokalani.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_LYDIA_LILIUOKALANI_DESC"
+			ideology=despotism
+			traits={ dislikes_germany }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_liv_rooney={
+		name="Liv Rooney"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Liv_Rooney.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_LIV_ROONEY_DESC"
+			ideology=conservatism
+			traits={ famous_singer }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_maddie_rooney={
+		name="Maddie Rooney"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Maddie_Rooney.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_MADDIE_ROONEY_DESC"
+			ideology=conservatism
+			traits={ famous_actor }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_mao_zedong={
+		name="Mao Zedong"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Mao_Zedong.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_MAO_ZEDONG_DESC"
+			ideology=marxism
+			traits={ communist_revolutionary }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_marilyn_monroe={
+		name="Marilyn Monroe"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Marilyn_Monroe.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CAL_marilyn_monroe
+			allowed  = {
+					original_tag  = CAL
+				}
+				traits  = {
+					constitutional_monarch
+				}
+		}
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/CAL_marilyn_monroe.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_MARILYN_MONROE_DESC"
+			ideology=despotism
+			traits={ staunch_monarchist famous_actor }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_mark_zuckerberg={
+		name="Mark Zuckerberg"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Mark_Zuckerberg.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_MARK_ZUCKERBERG_DESC"
+			ideology=nazism
+			traits={ fascist_demagogue }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_markiplier={
+		name="Markiplier"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Markiplier.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_MARKIPLIER_DESC"
+			ideology=liberalism
+			traits={ dislikes_germany }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_michael_eisner={
+		name="Michael Eisner"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Michael_Eisner.dds"
+			}
+		}
+	country_leader={
+			desc="POLITICS_MICHAEL_EISNER"
+			ideology=liberalism
+			traits={ dislikes_germany }
+			expire="2005.1.1.1"
+			id=-1
+		}
+	}
+	CAL_michael_jackson={
+		name="Michael Jackson"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Michael_Jackson.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_MICHAEL_JACKSON"
+			ideology=oligarchism
+			traits={ famous_singer }
+			expire="2009.1.1.1"
+			id=-1
+		}
+	}
+	CAL_miranda_cosgrove={
+		name="Miranda Cosgrove"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Miranda_Cosgrove.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_MIRANDA_COSGROVE"
+			ideology=liberalism
+			traits={ famous_actor }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_mr_beast={
+		name="Mr. Beast"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Mr_Beast.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_MR_BEAST_DESC"
+			ideology=nazism
+			traits={ fascist_demagogue }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_nancy_pelosi={
+		name="Nancy Pelosi"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Nancy_Pelosi.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_NANCY_PELOSI_DESC"
+			ideology=stalinism
+			traits={ communist_revolutionary }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_nikolai_ii={
+		name="Nikolai II"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Nikolai_II.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_NIKOLAI_II_DESC"
+			ideology=despotism
+			traits={ constitutional_monarch }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_norton_iii={
+		name="Norton III"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Norton_III.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_NORTON_III_DESC"
+			ideology=nazism
+			traits={ fascist_demagogue }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_pancho_villa={
+		name="Pancho Villa"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Pancho_Villa.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_PANCHO_VILLA_DESC"
+			ideology=marxism
+			traits={ communist_revolutionary }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_parker_rooney={
+		name="Parker Rooney"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Parker_Rooney.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_PARKER_ROONEY_DESC"
+			ideology=conservatism
+			traits={ famous_actor }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_penny_hofstadter={
+		name="Penny Hofstadter"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Penny_Hofstadter.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_PENNY_HOFSTADTER_DESC"
+			ideology=conservatism
+			traits={ famous_actor }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_peter_wrangel={
+		name="Peter Wrangel"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Peter_Wrangel.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_PETER_WRANGEL_DESC"
+			ideology=centrism
+			traits={ staunch_monarchist }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_philip_la_follete={
+		name="Philip La Follette"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Philip_La_Follette.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_PHILIP_LA_FOLLETE_DESC"
+			ideology=marxism
+			traits={ communist_revolutionary }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_porfirio_diaz={
+		name="Porfirio Diaz"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Porfirio_Diaz.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_PORIFIRO_DIAZ_DESC"
+			ideology=liberalism
+			traits={ dislikes_germany }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_queen_liliuokalani={
+		name="Mao Zedong"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Queen_Liliuokalani.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_QUEEN_LILIUOKASLANI_DESC"
+			ideology=despotism
+			traits={ staunch_monarchist }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_raj_koothrappali={
+		name="Raj Koothrappali"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Raj_Koothrappali.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_RAJ_KOOTHRAPPALI_DESC"
+			ideology=conservatism
+			traits={ famous_actor }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_ronald_reagan={
+		name="Ronald Reagan"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Ronald_Reagan.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_RONALD_REAGAN_DESC"
+			ideology=liberalism
+			traits={ dislikes_germany }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_richard_nixon={
+		name="Richard Nixon"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Richard_Nixon.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_RICHARD_NIXON_DESC"
+			ideology=liberalism
+			traits={ dislikes_germany }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_roy_disney={
+		name="Roy Disney"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Roy_Disney.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_ROY_DISNEY"
+			ideology=liberalism
+			traits={ dislikes_germany }
+			expire="1984.1.1.1"
+			id=-1
+		}
+	}
+	CAL_ryan_gosling={
+		name="Ryan Gosling"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Ryan_Gosling.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_RYAN_GOSLING_DESC"
+			ideology=liberalism
+			traits={ famous_actor }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_samuel_king={
+		name="Samuel King"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Samuel_King.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = CAL_samuel_king
+			allowed  = {
+					original_tag  = CAL
+				}
+				traits  = {
+					communist_revolutionary
+				}
+		}
+		portraits={
+			civilian={
+				small="gfx/interface/ideas/CAL_samuel_king.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_SAMUEL_KING_DESC"
+			ideology=leninism
+			traits={ communist_revolutionary }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_sanford_b_dole={
+		name="Sanford B. Dole"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Sanford_B_Dole.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_SANFORD_B_DOLE_DESC"
+			ideology=liberalism
+			traits={ dislikes_germany }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_santa_claus={
+		name="Santa Claus"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Santa_Claus.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_SANTA_CLAUS_DESC"
+			ideology=despotism
+			traits={ dislikes_germany }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_seth_macfarlane={
+		name="Seth MacFarlane"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Seth_MacFarlane.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_SETH_MACFARLANE_DESC"
+			ideology=conservatism
+			traits={ famous_actor }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_sheldon_cooper={
+		name="Sheldon Cooper"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Sheldon_Cooper.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_SHELDON_COOPER_DESC"
+			ideology=conservatism
+			traits={ famous_actor }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_sheridan_downey={
+		name="Sheridan Downey"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Sheridan_Downey.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_SHERIDAN_DOWNEY_DESC"
+			ideology=falangism
+			traits={ fascist_demagogue }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_snoop_dogg={
+		name="Snoop Dogg"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Snoop_Dogg.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_SNOOP_DOGG_DESC"
+			ideology=liberalism
+			traits={ famous_singer }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_steve_jobs={
+		name="Steve Jobs"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Steve_Jobs.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_STEVE_JOBS_DESC"
+			ideology=liberalism
+			traits={ dislikes_germany }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_theodore_roosevelt={
+		name="Theodore Roosevelt"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Theodore_Roosevelt.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_THEODORE_ROOSEVELT_DESC"
+			ideology=liberalism
+			traits={ dislikes_germany }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_tiger_woods={
+		name="Tiger Woods"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Tiger_Woods.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_TIGER_WOODS_DESC"
+			ideology=conservatism
+			traits={ dislikes_germany }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_timothee_chalamet={
+		name="Timothée Chalamet"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Timothee_Chalamet.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_TIMOTHEE_CHALAMET_DESC"
+			ideology=liberalism
+			traits={ dislikes_germany }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_tom_brady={
+		name="Tom Brady"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Tom_Brady.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_TOM_BRADY_DESC"
+			ideology=liberalism
+			traits={ dislikes_germany }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_tom_hanks={
+		name="Tom Hanks"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Tom_Hanks.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_TOM_HANKS_DESC"
+			ideology=liberalism
+			traits={ dislikes_germany }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_tom_holland={
+		name="Tom Holland"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Tom_Holland.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_TOM_HOLLAND_DESC"
+			ideology=liberalism
+			traits={ dislikes_germany }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_tucker_carlson={
+		name="Tucker Carlson"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Tucker_Carlson.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_TUCKER_CARLSON_DESC"
+			ideology=conservatism
+			traits={ dislikes_germany }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_vachon_pugh={
+		name="Vachon Pugh"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Vachon_Pugh.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_VACHON_PUGH_DESC"
+			ideology=nazism
+			traits={ fascist_demagogue }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_vladimir_lenin={
+		name="Vladimir Lenin"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Vladimir_Lenin.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_VLADIMIR_LENIN_DESC"
+			ideology=leninism
+			traits={ communist_revolutionary }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_warren_harding={
+		name="Warren G. Harding"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Warren_Harding.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_WARREN_HARDING_DESC"
+			ideology=liberalism
+			traits={ dislikes_germany }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_warren_magnuson={
+		name="Warren Magnuson"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Warren_Magnuson.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_WARREN_MAGNUSON_DESC"
+			ideology=marxism
+			traits={ communist_revolutionary }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_weird_al_yankovic={
+		name="Weird Al Yankovic"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Weird_Al_Yankovic.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_WEIRD_AL_YANKOVIC_DESC"
+			ideology=socialism
+			traits={ famous_singer }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_will_ferrell={
+		name="Will Ferrell"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Will_Ferrell.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_WILL_FERRELL_DESC"
+			ideology=liberalism
+			traits={ famous_actor }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_william_howard_taft={
+		name="William Howard Taft"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_William_Howard_Taft.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_WILLIAM_HOWARD_TAFT_DESC"
+			ideology=liberalism
+			traits={ dislikes_germany }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_woodrow_wilson={
+		name="Woodroow Wilson"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Woodrow_Wilson.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_WOODROW_WILSON_DESC"
+			ideology=liberalism
+			traits={ dislikes_germany }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_yuji_naka={
+		name="Yuji Naka"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Yuji_Naka.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_YUJI_NAKA_DESC"
+			ideology=liberalism
+			traits={ dislikes_germany }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_zendaya={
+		name="Zendaya"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Zendaya.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_ZENDAYA_DESC"
+			ideology=liberalism
+			traits={ dislikes_germany }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_Zoltan_Istvan={
+		name="Zoltan Istvan"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Zoltan_Istvan.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_ZOLTAN_ISTVAN_DESC"
+			ideology=moderatism
+			traits={ dislikes_germany }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_walt_disney={
+		name="Walt Disney"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Walt_Disney.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_WALT_DISNEY_DESC"
+			ideology=liberalism
+			traits={ dislikes_germany famous_cartoonist }
+			expire="1966.1.1.1"
+			id=-1
+		}
+	}
+	CAL_lucille_ball={
+		name="Lucille Ball"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Lucille_Ball.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_LUCILLE_BALL_DESC"
+			ideology=despotism
+			traits={ constitutional_monarch famous_actor }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_upton_sinclair={
+		name="Upton Sinclair"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Upton_Sinclair.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_UPTON_SINCLAIR_DESC"
+			ideology=stalinism
+			traits={ communist_revolutionary }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_norton_ii={
+		name="Norton II"
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_California_Norton_II.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_CHARLES_NORTON_DESC"
+			ideology=nazism
+			traits={ fascist_demagogue }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAL_henry_h_arnold={
+		name="Henry H. Arnold"
+		portraits={
+			army={
+				small="gfx/leaders/CAL/Portrait_California_Henry_Arnold.dds"
+			}
+			army={
+				large="gfx/leaders/CAL/Portrait_California_Henry_Arnold.dds"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = CAL_henry_h_arnold
+			allowed = {
+					original_tag = CAL
+				}
+				traits = {
+					army_chief_morale_2
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits={
+			army={
+				small="gfx/interface/ideas/CAL_henry_h_arnold.dds"
+			}
+		}
+		field_marshal={
+			traits={ logistics_wizard }
+			skill=4
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	CAL_alexander_patch={
+		name="Alexander Patch"
+		portraits={
+			army={
+				small="gfx/leaders/CAL/Portrait_California_Alexander_Patch.dds"
+			}
+			army={
+				large="gfx/leaders/CAL/Portrait_California_Alexander_Patch.dds"
+			}
+		}
+		corps_commander={
+			traits={ commando }
+			skill=3
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	CAL_lewis_h_brereton={
+		name="Lewis H. Brereton"
+		portraits={
+			army={
+				small="gfx/leaders/CAL/Portrait_California_Lewis_Brereton.dds"
+			}
+			army={
+				large="gfx/leaders/CAL/Portrait_California_Lewis_Brereton.dds"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	CAL_isaac_d_white={
+		name="Isaac D. White"
+		portraits={
+			army={
+				small="gfx/leaders/CAL/Portrait_California_Isaac_White.dds"
+			}
+			army={
+				large="gfx/leaders/CAL/Portrait_California_Isaac_White.dds"
+			}
+		}
+		corps_commander={
+			traits={ panzer_leader }
+			skill=3
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	CAL_albert_coady_wedemeyer={
+		name="Albert Coady Wedemeyer"
+		portraits={
+			army={
+				small="gfx/leaders/CAL/Portrait_California_Albert_Wedemeyer.dds"
+			}
+			army={
+				large="gfx/leaders/CAL/Portrait_California_Albert_Wedemeyer.dds"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	CAL_alexander_vandergrift={
+		name="Alexander Vandergrift"
+		portraits={
+			army={
+				small="gfx/leaders/CAL/Portrait_California_Alexander_Vandergrift.dds"
+			}
+			army={
+				large="gfx/leaders/CAL/Portrait_California_Alexander_Vandergrift.dds"
+			}
+		}
+		corps_commander={
+			traits={ commando }
+			skill=3
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	CAL_george_catlett_marshall={
+		name="George Catlett Marshall"
+		portraits={
+			army={
+				small="gfx/leaders/CAL/Portrait_California_George_Catlett_Marshall.dds"
+			}
+			army={
+				large="gfx/leaders/CAL/Portrait_California_George_Catlett_Marshall.dds"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = CAL_george_catlett_marshall
+			allowed = {
+					original_tag = CAL
+				}
+				traits = {
+					air_chief_all_weather_2
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits={
+			army={
+				small="gfx/interface/ideas/CAL_george_catlett_marshall.dds"
+			}
+		}
+		field_marshal={
+			traits={ logistics_wizard }
+			skill=4
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	CAL_george_windle_read_jr={
+		name="George Windle Read, Jr."
+		portraits={
+			army={
+				small="gfx/leaders/CAL/Portrait_California_George_Read.dds"
+			}
+			army={
+				large="gfx/leaders/CAL/Portrait_California_George_Read.dds"
+			}
+		}
+		corps_commander={
+			traits={ panzer_leader }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	CAL_john_lesesne_dewitt={
+		name="John Lesesne DeWitt"
+		portraits={
+			army={
+				small="gfx/leaders/CAL/Portrait_California_John_Lesesne_DeWitt.dds"
+			}
+			army={
+				large="gfx/leaders/CAL/Portrait_California_John_Lesesne_DeWitt.dds"
+			}
+		}
+		field_marshal={
+			traits={ logistics_wizard }
+			skill=4
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	CAL_john_pershing={
+		name="John Pershing"
+		portraits={
+			army={
+				small="gfx/leaders/CAL/Portrait_California_John_Pershing.dds"
+			}
+			army={
+				large="gfx/leaders/CAL/Portrait_California_John_Pershing.dds"
+			}
+		}
+		field_marshal={
+			traits={ logistics_wizard }
+			skill=4
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	CAL_jimmy_doolittle={
+		name="Jimmy Doolittle"
+		portraits={
+			army={
+				small="gfx/leaders/CAL/Portrait_California_Jimmy_Doolittle.dds"
+			}
+			army={
+				large="gfx/leaders/CAL/Portrait_California_Jimmy_Doolittle.dds"
+			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	CAL_herbert_b_powell={
+		name="Herbert B. Powell"
+		portraits={
+			army={
+				small="gfx/leaders/CAL/Portrait_California_Herbert_Powell.dds"
+			}
+			army={
+				large="gfx/leaders/CAL/Portrait_California_Herbert_Powell.dds"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	CAL_hugh_scott={
+		name="Hugh Scott"
+		portraits={
+			army={
+				small="gfx/leaders/CAL/Portrait_California_Hugh_Scott.dds"
+			}
+			army={
+				large="gfx/leaders/CAL/Portrait_California_Hugh_Scott.dds"
+			}
+		}
+		field_marshal={
+			traits={ logistics_wizard }
+			skill=4
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	CAL_chester_w_nimitz={
+		name="Chester W. Nimitz"
+		portraits={
+			army={
+				small="gfx/leaders/CAL/Portrait_California_Chester_Nimitz.dds"
+			}
+			army={
+				large="gfx/leaders/CAL/Portrait_California_Chester_Nimitz.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = CAL_chester_w_nimitz
+			ledger = navy
+				allowed = {
+					original_tag = CAL
+				}
+				traits = {
+					navy_fleet_logistics_2
+				}
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits={
+			army={
+				small="gfx/interface/ideas/CAL_chester_w_nimitz.dds"
+			}
+		}
+		navy_leader={
+			traits={ superior_tactician spotter }
+			skill=5
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=0
+		}
+	}
+	CAL_felix_stump={
+		name="Felix Stump"
+		portraits={
+			army={
+				small="gfx/leaders/CAL/Portrait_California_Felix_Stump.dds"
+			}
+			army={
+				large="gfx/leaders/CAL/Portrait_California_Felix_Stump.dds"
+			}
+		}
+		advisor={
+			
+			
+			slot = navy_chief
+			idea_token = CAL_felix_stump
+			allowed = {
+					original_tag = CAL
+				}
+				traits = {
+					navy_chief_maneuver_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		portraits={
+			army={
+				small="gfx/interface/ideas/CAL_felix_stump.dds"
+			}
+		}
+		navy_leader={
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=0
+		}
+	}
+	CAL_harvey_overesch={
+		name="Harvey Overesch"
+		portraits={
+			army={
+				small="gfx/leaders/CAL/Portrait_California_Harvey_Overesch.dds"
+			}
+			army={
+				large="gfx/leaders/CAL/Portrait_California_Harvey_Overesch.dds"
+			}
+		}
+		navy_leader={
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=0
+		}
+	}
+	CAL_lloyd_m_mustin={
+		name="Lloyd M. Mustin"
+		portraits={
+			army={
+				small="gfx/leaders/CAL/Portrait_California_Lloyd_Mustin.dds"
+			}
+			army={
+				large="gfx/leaders/CAL/Portrait_California_Lloyd_Mustin.dds"
+			}
+		}
+		navy_leader={
+			traits={ fly_swatter }
+			skill=3
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=0
+		}
+	}
+	CAL_daniel_e_barbey={
+		name="Daniel E. Barbey"
+		portraits={
+			army={
+				small="gfx/leaders/CAL/Portrait_California_Daniel_Barbey.dds"
+			}
+			army={
+				large="gfx/leaders/CAL/Portrait_California_Daniel_Barbey.dds"
+			}
+		}
+		navy_leader={
+			traits={ superior_tactician }
+			skill=3
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=0
+		}
+	}
+	CAL_james_h_doyle={
+		name="James H. Doyle"
+		portraits={
+			army={
+				small="gfx/leaders/CAL/Portrait_California_James_Doyle.dds"
+			}
+			army={
+				large="gfx/leaders/CAL/Portrait_California_James_Doyle.dds"
+			}
+		}
+		navy_leader={
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=0
+		}
+	}
+	CAL_william_daniel_leahy={
+		name="William Daniel Leahy"
+		portraits={
+			army={
+				small="gfx/leaders/CAL/Portrait_California_William_Daniel_Leahy.dds"
+			}
+			army={
+				large="gfx/leaders/CAL/Portrait_California_William_Daniel_Leahy.dds"
+			}
+		}
+		field_marshal={
+			traits={ logistics_wizard }
+			skill=4
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	CAL_tasker_bliss={
+		name="Tasker Bliss"
+		portraits={
+			army={
+				small="gfx/leaders/CAL/Portrait_California_Tasker_Bliss.dds"
+			}
+			army={
+				large="gfx/leaders/CAL/Portrait_California_Tasker_Bliss.dds"
+			}
+		}
+		field_marshal={
+			traits={ logistics_wizard }
+			skill=4
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	CAL_harry_w_hill={
+		name="Harry W. Hill"
+		portraits={
+			army={
+				small="gfx/leaders/CAL/Portrait_California_Harry_Hill.dds"
+			}
+			army={
+				large="gfx/leaders/CAL/Portrait_California_Harry_Hill.dds"
+			}
+		}
+		navy_leader={
+			traits={ ironside }
+			skill=3
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=0
+		}
+	}
+}

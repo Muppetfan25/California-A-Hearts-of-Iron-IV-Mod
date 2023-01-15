@@ -1,0 +1,1174 @@
+focus_tree = {
+	id = californian_focus
+	continuous_focus_position = { x = 1860 y = 1050 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CAL
+		}
+	}
+	#Expand the State Highway System
+	focus = {
+		id = CAL_expand_the_state_highway_system
+		icon = GFX_goal_generic_army_motorized
+		x = 1
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = CAL_create_the_rail_commission  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_political_power = 100
+			
+			
+		}
+	}
+
+	#Create the Rail Commission
+	focus = {
+		id = CAL_create_the_rail_commission
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 4
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = CAL_central_valley_projects  } prerequisite = { focus = CAL_more_civilian_factories  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			build_railway = {
+			  level = 1
+			  build_only_on_allied = yes
+			  controller_priority = {
+			    base = 1
+			   
+			    modifier = {
+			      tag = CAL
+			      add = 2
+			    }
+			  }
+			  fallback = yes
+			  path = { 11859 9814 11757 7517 1562 }
+			  start_province = 11859
+			  target_province = 9814
+			}
+			
+			build_railway = {
+			  level = 1
+			  build_only_on_allied = yes
+			  controller_priority = {
+			    base = 1
+			   
+			    modifier = {
+			      tag = CAL
+			      add = 2
+			    }
+			  }
+			  fallback = yes
+			  path = { 11859 9814 11757 7517 1562 }
+			  start_state = 378
+			  target_state = 484
+			}
+			
+			
+			
+		}
+	}
+
+	#The Bear Empress
+	focus = {
+		id = CAL_the_bear_empress
+		icon = GFX_CAL_the_bear_empress-381085
+		x = 14
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = CAL_our_political_stance  }
+		mutually_exclusive = { focus = CAL_californian_fascism  } mutually_exclusive = { focus = CAL_freedom_for_california  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_popularity = {
+			    ideology = neutrality
+			    popularity = 0.4
+			}
+			
+			
+			
+		}
+	}
+
+	#Extra Research Slot II
+	focus = {
+		id = CAL_extra_research_slot_ii
+		icon = GFX_focus_research2
+		x = 3
+		y = 9
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = CAL_extra_research_slot  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_research_slot = 1
+			
+			
+		}
+	}
+
+	#Invest In Civilian Industry
+	focus = {
+		id = CAL_invest_in_civilian_industry
+		icon = GFX_focus_generic_industry_3
+		x = 4
+		y = 0
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			random_owned_controlled_state = {
+			limit = {
+			free_building_slots = {
+			building = industrial_complex
+			size > 0
+			include_locked = yes
+			}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+			}
+			set_state_flag = california_has_industralized
+			}
+			
+			
+		}
+	}
+
+	#Standard Oil Refineries
+	focus = {
+		id = CAL_standard_oil_refineries
+		icon = GFX_goal_generic_oil_refinery
+		x = 2
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = CAL_invest_in_civilian_industry  }
+		ai_will_do = { factor = 1 }
+		select_effect = {
+add_resource = {
+    type = oil
+    amount = 100
+}
+
+
+
+}
+	}
+
+	#New Exploratory Refineries
+	focus = {
+		id = CAL_new_exploratory_refineries
+		icon = GFX_goal_generic_construction
+		x = 3
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = CAL_standard_oil_refineries  }
+		mutually_exclusive = { focus = CAL_new_exploratory_drilling  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_resource = {
+			    type = oil
+			    amount = 50
+			}
+			
+			
+			
+		}
+	}
+
+	#New Exploratory Drilling
+	focus = {
+		id = CAL_new_exploratory_drilling
+		icon = GFX_goal_generic_construction2
+		x = 1
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = CAL_standard_oil_refineries  }
+		mutually_exclusive = { focus = CAL_new_exploratory_refineries  }
+		ai_will_do = { factor = 1 }
+		select_effect = {
+add_resource = {
+    type = oil
+    amount = 50
+}
+
+
+
+}
+	}
+
+	#Central Valley Projects
+	focus = {
+		id = CAL_central_valley_projects
+		icon = GFX_goal_generic_production
+		x = 2
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = CAL_new_exploratory_refineries focus = CAL_new_exploratory_drilling  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_political_power = 100
+			
+			
+		}
+	}
+
+	#Invest in CalSo
+	focus = {
+		id = CAL_invest_in_calso
+		icon = GFX_focus_generic_industry_2
+		x = 6
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = CAL_invest_in_civilian_industry  }
+		ai_will_do = { factor = 1 }
+		select_effect = {
+add_stability = 0.1
+
+
+}
+	}
+
+	#A Central Power Grid
+	focus = {
+		id = CAL_a_central_power_grid
+		icon = GFX_goal_generic_production2
+		x = 5
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = CAL_invest_in_calso  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_manpower = 10000
+			
+			
+		}
+	}
+
+	#More Industrial Development
+	focus = {
+		id = CAL_more_industrial_development
+		icon = GFX_focus_generic_industry_3
+		x = 7
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = CAL_invest_in_calso  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			random_owned_controlled_state = {
+			limit = {
+			free_building_slots = {
+			building = industrial_complex
+			size > 0
+			include_locked = yes
+			}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+			}
+			set_state_flag = california_has_caught_up
+			}
+			
+			
+		}
+	}
+
+	#More Civilian Factories
+	focus = {
+		id = CAL_more_civilian_factories
+		icon = GFX_focus_generic_industry_1
+		x = 6
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = CAL_a_central_power_grid  } prerequisite = { focus = CAL_more_industrial_development  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			random_owned_controlled_state = {
+			limit = {
+			free_building_slots = {
+			building = industrial_complex
+			size > 0
+			include_locked = yes
+			}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+			}
+			set_state_flag = california_builds_up
+			}
+			
+			
+		}
+	}
+
+	#Hydroelectric Power
+	focus = {
+		id = CAL_hydroelectric_power
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 5
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = CAL_create_the_rail_commission  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_stability = 0.1
+			
+			
+		}
+	}
+
+	#Military Production
+	focus = {
+		id = CAL_military_production
+		icon = GFX_goal_generic_military_sphere
+		x = 3
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = CAL_expand_the_state_highway_system  } prerequisite = { focus = CAL_hydroelectric_power  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			random_owned_controlled_state = {
+			limit = {
+			free_building_slots = {
+			building = industrial_complex
+			size > 0
+			include_locked = yes
+			}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+			}
+			set_state_flag = california_has_built_up_2
+			}
+			
+			
+		}
+	}
+
+	#Expand the State College System
+	focus = {
+		id = CAL_expand_the_state_college_system
+		icon = GFX_focus_generic_self_management
+		x = 2
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = CAL_military_production  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_political_power = 100
+			
+			
+		}
+	}
+
+	#The California Institute of Technology
+	focus = {
+		id = CAL_the_california_institute_of_technology
+		icon = GFX_CAL_the_california_institute_of_technology-427
+		x = 1
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = CAL_expand_the_state_college_system  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_manpower = 10000
+			
+			
+		}
+	}
+
+	#A Well Needed Naval Expansion
+	focus = {
+		id = CAL_a_well_needed_naval_expansion
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 5
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			random_owned_controlled_state = {
+			limit = {
+			free_building_slots = {
+			building = dockyard
+			size > 0
+			include_locked = yes
+			}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+			type = dockyard
+			level = 1
+			instant_build = yes
+			}
+			set_state_flag = californias_new_dockyard
+			}
+			
+			
+		}
+	}
+
+	#Naval Expansion II
+	focus = {
+		id = CAL_naval_expansion_ii
+		icon = GFX_CAL_naval_expansion_ii-404
+		x = 4
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = CAL_a_well_needed_naval_expansion  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_manpower = 10000
+			
+			
+		}
+	}
+
+	#Naval Expansion III
+	focus = {
+		id = CAL_naval_expansion_iii
+		icon = GFX_CAL_naval_expansion_iii-404
+		x = 6
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = CAL_a_well_needed_naval_expansion  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_manpower = 10000
+			
+			
+		}
+	}
+
+	#Extra Research Slot
+	focus = {
+		id = CAL_extra_research_slot
+		icon = GFX_focus_research
+		x = 5
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = CAL_naval_expansion_ii  } prerequisite = { focus = CAL_naval_expansion_iii  }
+		completion_reward = {
+			add_research_slot = 1
+			
+			
+		}
+	}
+
+	#Extra Research Slot III
+	focus = {
+		id = CAL_extra_research_slot_iii
+		icon = GFX_focus_research2
+		x = 7
+		y = 9
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = CAL_extra_research_slot  }
+		completion_reward = {
+			
+						add_research_slot = 1
+					
+		}
+	}
+
+	#Extra Research Slot IV
+	focus = {
+		id = CAL_extra_research_slot_iv
+		icon = GFX_focus_research
+		x = 5
+		y = 10
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = CAL_extra_research_slot_ii  } prerequisite = { focus = CAL_extra_research_slot_iii  }
+		available = {
+			
+						num_of_factories > 50
+					
+		}
+		completion_reward = {
+			
+						add_research_slot = 1
+					
+		}
+	}
+
+	#Californian Fascism
+	focus = {
+		id = CAL_californian_fascism
+		icon = GFX_CAL_californian_fascism-381084
+		x = 17
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = CAL_our_political_stance  }
+		mutually_exclusive = { focus = CAL_the_bear_empress  } mutually_exclusive = { focus = CAL_freedom_for_california  } mutually_exclusive = { focus = CAL_a_communist_revolutionary  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_popularity = {
+			    ideology = fascism
+			    popularity = 0.3
+			}
+			
+			
+			
+		}
+	}
+
+	#A Communist Revolutionary
+	focus = {
+		id = CAL_a_communist_revolutionary
+		icon = GFX_CAL_a_communist_revolutionary-381631
+		x = 20
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = CAL_our_political_stance  }
+		mutually_exclusive = { focus = CAL_the_bear_empress  } mutually_exclusive = { focus = CAL_californian_fascism  } mutually_exclusive = { focus = CAL_freedom_for_california  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_popularity = {
+			    ideology = communism
+			    popularity = 0.4
+			}
+			
+			
+			
+		}
+	}
+
+	#Freedom for California
+	focus = {
+		id = CAL_freedom_for_california
+		icon = GFX_CAL_freedom_for_california-381629
+		x = 9
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = CAL_our_political_stance  }
+		mutually_exclusive = { focus = CAL_the_bear_empress  } mutually_exclusive = { focus = CAL_californian_fascism  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_popularity = {
+			    ideology = democracy
+			    popularity = 0.5
+			}
+			
+			
+			
+		}
+	}
+
+	#Our Political Stance
+	focus = {
+		id = CAL_our_political_stance
+		icon = GFX_goal_generic_political_pressure
+		x = 13
+		y = 0
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_political_power = 100
+			
+			
+		}
+	}
+
+	#Our Imperial Guards
+	focus = {
+		id = CAL_our_imperial_guards
+		icon = GFX_CAL_our_imperial_guards-381672
+		x = 13
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = CAL_establish_our_empire  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_political_power = 100
+			
+			
+			add_popularity = {
+			    ideology = neutrality
+			    popularity = 0.4
+			}
+			
+			
+			
+		}
+	}
+
+	#Remove Communism
+	focus = {
+		id = CAL_remove_communism
+		icon = GFX_CAL_remove_communism-381639
+		x = 10
+		y = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = CAL_freedom_for_california  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_popularity = {
+			    ideology = democracy
+			    popularity = 0.5
+			}
+			
+			
+			
+		}
+	}
+
+	#Mobilize Our Troops
+	focus = {
+		id = CAL_mobilize_our_troops
+		icon = GFX_CAL_mobilize_our_troops-381649
+		x = 8
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = CAL_freedom_for_california  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_command_power = 100
+			
+			
+		}
+	}
+
+	#Establish Our Empire
+	focus = {
+		id = CAL_establish_our_empire
+		icon = GFX_CAL_establish_our_empire-381670
+		x = 14
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = CAL_the_bear_empress  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_state_claim = 379
+			
+			add_state_claim = 380
+			
+			add_state_claim = 377
+			
+			add_state_claim = 376
+			
+			add_state_claim = 382
+			
+			
+		}
+	}
+
+	#Sign a Peace Treaty
+	focus = {
+		id = CAL_sign_a_peace_treaty
+		icon = GFX_goal_anschluss
+		x = 9
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = CAL_the_disney_administration  focus = CAL_the_johnson_administration focus = CAL_the_earhart_administration  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			white_peace = USA
+			
+			white_peace = MEX
+			
+			
+		}
+	}
+
+	#Reestablish Relations With Mexico
+	focus = {
+		id = CAL_reestablish_relations_with_mexico
+		icon = GFX_CAL_reestablish_relations_with_mexico-231
+		x = 9
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = CAL_sign_a_peace_treaty  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			give_guarantee = MEX
+			
+			
+		}
+	}
+
+	#The Disney Administration
+	focus = {
+		id = CAL_the_disney_administration
+		icon = GFX_CAL_the_disney_administration-427
+		x = 9
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = CAL_remove_communism  } prerequisite = { focus = CAL_mobilize_our_troops  }
+		mutually_exclusive = { focus = CAL_the_johnson_administration  } mutually_exclusive = { focus = CAL_the_earhart_administration  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_popularity = {
+			    ideology = democratic
+			    popularity = 0.5
+			}
+			
+			
+			
+			add_political_power = 100
+			
+			
+		}
+	}
+
+	#The Johnson Administration
+	focus = {
+		id = CAL_the_johnson_administration
+		icon = GFX_CAL_the_johnson_administration-381674
+		x = 7
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = CAL_remove_communism  } prerequisite = { focus = CAL_mobilize_our_troops  }
+		mutually_exclusive = { focus = CAL_the_disney_administration  } mutually_exclusive = { focus = CAL_the_earhart_administration  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			create_country_leader = {
+				name = "Hiram Johnson"        
+				desc ="POLITICS_HIRAM_JOHNSON_DESC"
+				picture = "gfx/leaders/CAL/Portrait_California_Hiram_Johnson.dds"
+				ideology =conservatism
+				traits ={ dislikes_germany }
+				expire ="1965.1.1.1"
+			}
+			
+		}
+	}
+
+	#The Earhart Administration
+	focus = {
+		id = CAL_the_earhart_administration
+		icon = GFX_CAL_the_earhart_administration-381678
+		x = 11
+		y = 4
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = CAL_remove_communism  } prerequisite = { focus = CAL_mobilize_our_troops  }
+		mutually_exclusive = { focus = CAL_the_disney_administration  } mutually_exclusive = { focus = CAL_the_johnson_administration  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			create_country_leader = {
+				name = "Amelia Earhart"        
+				desc ="POLITICS_AMELIA_EARHART_DESC"
+				picture = "gfx/leaders/CAL/Portrait_California_Amelia_Earhart.dds"
+				ideology =liberalism
+				traits ={ famous_aviator }
+				expire = "1965.1.1.1"
+			}
+			
+		}
+	}
+
+	#The Californian Autocracy
+	focus = {
+		id = CAL_the_californian_autocracy
+		icon = GFX_CAL_the_californian_autocracy-381681
+		x = 15
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = CAL_establish_our_empire  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_popularity = {
+			    ideology = neutrality
+			    popularity = 0.4
+			}
+			
+			
+			
+		}
+	}
+
+	#The Hawaiian Question
+	focus = {
+		id = CAL_the_hawaiian_question
+		icon = GFX_CAL_the_hawaiian_question-381687
+		x = 14
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = CAL_all_hail_queen_lucille_i } 
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			release_puppet = HAW
+			
+			
+		}
+	}
+
+	#All Hail Queen Lucille I
+	focus = {
+		id = CAL_all_hail_queen_lucille_i
+		icon = GFX_goal_generic_neutrality_focus
+		x = 14
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = CAL_our_imperial_guards  } prerequisite = { focus = CAL_the_californian_autocracy  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			create_country_leader = {
+				name = "Lucille Ball I"        
+				desc ="POLITICS_LUCILLE_BALL_DESC"
+				picture = "gfx/leaders/CAL/Portrait_California_Lucille_Ball.dds"
+				ideology =despotism
+				traits ={ constitutional_monarch famous_actor }
+				expire ="1965.1.1.1"
+			}
+			
+			set_politics = {
+			    ruling_party = neutrality
+			    last_election = "1936.1.1"
+			    elections_allowed = no
+			}
+		}
+	}
+
+	#Californian Falangism
+	focus = {
+		id = CAL_californian_falangism
+		icon = GFX_CAL_californian_falangism-381698
+		x = 16
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = CAL_californian_fascism  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_popularity = {
+			    ideology = fascism
+			    popularity = 0.4
+			}
+			
+			
+			
+		}
+	}
+
+	#Californian Nazism
+	focus = {
+		id = CAL_californian_nazism
+		icon = GFX_CAL_californian_nazism-381701
+		x = 18
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = CAL_californian_fascism  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_popularity = {
+			    ideology = fascism
+			    popularity = 0.4
+			}
+			
+			
+			
+		}
+	}
+
+	#Integralism In California
+	focus = {
+		id = CAL_integralism_in_california
+		icon = GFX_CAL_integralism_in_california-381741
+		x = 17
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = CAL_californian_falangism  } prerequisite = { focus = CAL_californian_nazism  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_popularity = {
+			    ideology = fascism
+			    popularity = 0.4
+			}
+			
+			
+			
+		}
+	}
+
+	#The Patterns of Force
+	focus = {
+		id = CAL_the_patterns_of_force
+		icon = GFX_CAL_the_patterns_of_force-381751
+		x = 17
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = CAL_integralism_in_california  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_popularity = {
+			    ideology = fascism
+			    popularity = 0.4
+			}
+			
+			
+			
+			add_political_power = 100
+			
+			
+		}
+	}
+
+	#Emperor Norton's Descendant
+	focus = {
+		id = CAL_emperornortonsdescendant
+		icon = GFX_CAL_emperornortonsdescendant-381752
+		x = 17
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = CAL_the_patterns_of_force  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			create_country_leader = {
+				name = "Norton II of California"        
+				desc ="POLITICS_CHARLES_NORTON_DESC"
+				picture ="gfx/leaders/CAL/Portrait_California_Norton_II.dds"
+				ideology =nazism
+				traits ={ fascist_demagogue }
+				expire="1965.1.1.1" 
+			}
+			
+			set_politics = {
+				ruling_party = fascism
+				last_election = "1936.1.1"
+				elections_allowed = no
+			}
+			
+		}
+	}
+
+	#Join Germany
+	focus = {
+		id = CAL_join_germany
+		icon = GFX_focus_chi_mission_to_germany
+		x = 17
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = CAL_emperornortonsdescendant  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			GER = {
+				add_to_faction = CAL
+			
+			
+			}
+			
+		}
+	}
+
+	#Rally Up The Supporters
+	focus = {
+		id = CAL_rally_up_the_supporters
+		icon = GFX_CAL_rally_up_the_supporters-381755
+		x = 20
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = CAL_a_communist_revolutionary  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_popularity = {
+			    ideology = communism
+			    popularity = 0.4
+			}
+			
+			
+			
+		}
+	}
+
+	#The Rise Of Upton Sinclair
+	focus = {
+		id = CAL_the_rise_of_upton_sinclair
+		icon = GFX_CAL_the_rise_of_upton_sinclair-426
+		x = 20
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = CAL_rally_up_the_supporters  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			create_country_leader = {
+				name = "Upton Sinclair"        
+				desc ="POLITICS_UPTON_SINCLAIR_DESC"
+				picture ="gfx/leaders/CAL/Portrait_California_Upton_Sinclair.dds"
+				ideology =stalinism
+				traits ={ communist_revolutionary }
+				expire="1965.1.1.1"
+				
+			}
+			
+		    set_politics = {
+				ruling_party = communism
+				last_election = "1936.1.1"
+				elections_allowed = no
+			}
+			
+		}
+	}
+
+	#Join the Soviets
+	focus = {
+		id = CAL_join_the_soviets
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		x = 20
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = CAL_the_rise_of_upton_sinclair  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			SOV = {
+				add_to_faction = CAL
+			
+			
+			}
+			
+		}
+	}
+
+}
