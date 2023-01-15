@@ -1,0 +1,18 @@
+spriteTypes = { 
+
+	SpriteType = { 
+		name = "GFX_idea_allied_guarantee"
+		texturefile = "gfx/interface/ideas/allied_guarantee.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_idea_founder_of_disney"
+		texturefile = "gfx/interface/ideas/founder_of_disney.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_idea_political_unity"
+		texturefile = "gfx/interface/ideas/political_unity.dds"
+	}
+ 
+ }
